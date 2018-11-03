@@ -9,5 +9,6 @@
 import Foundation
 
 protocol WeatherListInteractorOutput: class {
-  
+  func didFetchWeatherForecast(_ forecasts: [Forecast])
+  func didFailToFetchWeatherForecast()
 }

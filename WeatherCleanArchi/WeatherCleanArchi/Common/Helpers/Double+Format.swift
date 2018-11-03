@@ -1,5 +1,5 @@
 //
-//  WeatherListInteractorInput.swift
+//  Double+Format.swift
 //  WeatherCleanArchi
 //
 //  Created by Alan Flament on 03/11/2018.
@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol WeatherListInteractorInput {
-  func fetchWeatherForecast()
+extension Double {
+  
+  func format(f: String) -> String {
+    return String(format: "%\(f)f", self)
+  }
 }

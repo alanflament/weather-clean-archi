@@ -6,4 +6,6 @@
   Copyright © 2018 Alan Flament. All rights reserved.
 */
 
-"weatherlist.title" = "Météo de Paris";
+"general.ok" = "Ok";
+"weatherlist.title" = "Weather of Paris";
+"weatherlist.error.loading.message" = "Impossible de rafraîchir les données";

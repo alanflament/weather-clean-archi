@@ -35,11 +35,11 @@ class WeatherListInteractor {
 
 extension WeatherListInteractor: WeatherListInteractorInput {
   
-  func fetchWeatherList() {
+  func fetchWeatherForecast() {
     repository.getWeatherForecast(city: Constant.city, units: Constant.units, nbDays: Constant.nbDays, success: { forecasts in
-      dump(forecasts)
+      self.output?.didFetchWeatherForecast(forecasts)
     }, failure: { error in
-      dump(error)
+      self.output?.didFailToFetchWeatherForecast()
     })
   }
 }

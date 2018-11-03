@@ -11,19 +11,47 @@
     </dependencies>
     <scenes>
         <!--Weather List View Controller-->
-        <scene sceneID="th4-ce-een">
+        <scene sceneID="7RX-ja-Q1b">
             <objects>
-                <viewController storyboardIdentifier="WeatherListViewController" id="dIC-O8-FQU" customClass="WeatherListViewController" customModule="WeatherCleanArchi" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MeF-gr-8G3">
+                <viewController storyboardIdentifier="WeatherListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7vU-TL-bgX" customClass="WeatherListViewController" customModule="WeatherCleanArchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x1I-ij-1ba"/>
+                        <viewControllerLayoutGuide type="bottom" id="jvg-5t-hv6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gcs-Lt-8A6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-Bj-rTu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eFQ-wQ-SSg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="OQi-Tt-ZEy"/>
+                        <constraints>
+                            <constraint firstItem="jvg-5t-hv6" firstAttribute="top" secondItem="iNg-Bj-rTu" secondAttribute="bottom" id="Npb-Pf-4k7"/>
+                            <constraint firstAttribute="trailing" secondItem="iNg-Bj-rTu" secondAttribute="trailing" id="Yor-Py-tdE"/>
+                            <constraint firstItem="iNg-Bj-rTu" firstAttribute="leading" secondItem="Gcs-Lt-8A6" secondAttribute="leading" id="nRe-cJ-IsN"/>
+                            <constraint firstItem="iNg-Bj-rTu" firstAttribute="top" secondItem="x1I-ij-1ba" secondAttribute="bottom" id="wBi-Rq-pVv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ckg-rh-HEx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CnA-C6-O5h"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="iNg-Bj-rTu" id="KkZ-N7-IXd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bDv-QV-kEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jw-8Y-naD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-47"/>
+            <point key="canvasLocation" x="1592" y="585"/>
         </scene>
     </scenes>
 </document>

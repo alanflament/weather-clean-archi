@@ -12,8 +12,8 @@ class AppRouter {
   
   // MARK: - Property
   
-  lazy var rootViewController: UINavigationController = {
-    return UINavigationController(rootViewController: weatherListViewController())
+  lazy var rootViewController: WeatherNavigationController = {
+    return WeatherNavigationController(rootViewController: weatherListViewController())
   }()
   
   // MARK: - Private

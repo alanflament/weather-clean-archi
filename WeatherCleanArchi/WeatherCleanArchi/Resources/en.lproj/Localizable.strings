@@ -6,4 +6,6 @@
   Copyright © 2018 Alan Flament. All rights reserved.
 */
 
+"general.ok" = "Ok";
 "weatherlist.title" = "Weather of Paris";
+"weatherlist.error.loading.message" = "Failed to refresh data";

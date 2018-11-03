@@ -9,5 +9,6 @@
 import Foundation
 
 protocol WeatherListPresenterOutput: class {
-  
+  func displayWeatherForecastList(_ forecastItemViewModels: [ForecastItemViewModel])
+  func displayWeatherForecastLoadingError()
 }
