@@ -1,5 +1,5 @@
 //
-//  WeatherListPresenterInput.swift
+//  WeatherDetailsPresenterInput.swift
 //  WeatherCleanArchi
 //
 //  Created by Alan Flament on 03/11/2018.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol WeatherListPresenterInput {
+protocol WeatherDetailsPresenterInput {
   func viewDidLoad()
 }

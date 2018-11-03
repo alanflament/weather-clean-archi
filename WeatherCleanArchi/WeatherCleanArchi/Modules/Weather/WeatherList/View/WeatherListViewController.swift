@@ -83,7 +83,7 @@ extension WeatherListViewController: UICollectionViewDataSource {
 extension WeatherListViewController: UICollectionViewDelegate {
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+    presenter.didTapWeatherForecast(at: indexPath.row)
   }
 }
 

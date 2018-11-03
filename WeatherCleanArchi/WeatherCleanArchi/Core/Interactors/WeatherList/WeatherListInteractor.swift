@@ -23,6 +23,7 @@ class WeatherListInteractor {
   weak var output: WeatherListInteractorOutput?
   
   private let repository: WeatherRepositoryInput
+  private var forecasts: [Forecast]?
   
   // MARK: - Init
   
@@ -37,9 +38,16 @@ extension WeatherListInteractor: WeatherListInteractorInput {
   
   func fetchWeatherForecast() {
     repository.getWeatherForecast(city: Constant.city, units: Constant.units, nbDays: Constant.nbDays, success: { forecasts in
+      self.forecasts = forecasts
       self.output?.didFetchWeatherForecast(forecasts)
     }, failure: { error in
       self.output?.didFailToFetchWeatherForecast()
     })
+  }
+  
+  func getWeatherForecastForDetails(at index: Int) {
+    if let forecast = forecasts?[index] {
+      output?.didGetWeatherForecastForDetails(forecast)
+    }
   }
 }

@@ -10,4 +10,5 @@ import Foundation
 
 protocol WeatherListInteractorInput {
   func fetchWeatherForecast()
+  func getWeatherForecastForDetails(at index: Int)
 }

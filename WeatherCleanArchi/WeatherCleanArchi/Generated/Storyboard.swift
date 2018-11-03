@@ -58,6 +58,11 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
   }
+  internal enum WeatherDetails: StoryboardType {
+    internal static let storyboardName = "WeatherDetails"
+
+    internal static let weatherDetailsViewController = SceneType<WeatherCleanArchi.WeatherDetailsViewController>(storyboard: WeatherDetails.self, identifier: "WeatherDetailsViewController")
+  }
   internal enum WeatherList: StoryboardType {
     internal static let storyboardName = "WeatherList"
 

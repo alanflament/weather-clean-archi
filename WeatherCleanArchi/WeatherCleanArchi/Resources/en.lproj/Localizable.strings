@@ -9,3 +9,9 @@
 "general.ok" = "Ok";
 "weatherlist.title" = "Weather of Paris";
 "weatherlist.error.loading.message" = "Failed to refresh data";
+"weatherdetails.feeling.hot" = "it's warm";
+"weatherdetails.feeling.cold" = "it's cold";
+"weatherDetails.temperatureMin" = "Min. temperature";
+"weatherDetails.temperatureMax" = "Max. temperature";
+"weatherDetails.humidity" = "Humidity";
+"weatherDetails.feeling" = "Feeling";

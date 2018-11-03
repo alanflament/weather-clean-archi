@@ -36,9 +36,9 @@ class WeatherNavigationController: UINavigationController {
   
   private func setupUI() {
     navigationBar.isTranslucent = false
-    navigationBar.tintColor = Color.watermelon.ui
+    navigationBar.tintColor = .brown
     navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
     navigationBar.shadowImage = UIImage()
-    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:Color.watermelon.ui]
+    navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.brown]
   }
 }
