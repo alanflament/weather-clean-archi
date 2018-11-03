@@ -27,6 +27,13 @@
 		28A38C1A218E087D00AE9B63 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C19218E087D00AE9B63 /* Presenter.swift */; };
 		28A38C1D218E08AD00AE9B63 /* VoidFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C1C218E08AD00AE9B63 /* VoidFunction.swift */; };
 		28A38C1F218E08D900AE9B63 /* DispatchQueue+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C1E218E08D900AE9B63 /* DispatchQueue+Background.swift */; };
+		28A38C23218E0C9000AE9B63 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C22218E0C9000AE9B63 /* WeatherAPI.swift */; };
+		28A38C25218E0EB800AE9B63 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C24218E0EB800AE9B63 /* WeatherRepository.swift */; };
+		28A38C27218E104800AE9B63 /* WeatherRepositoryInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C26218E104800AE9B63 /* WeatherRepositoryInput.swift */; };
+		28A38C2D218E10FE00AE9B63 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C2C218E10FE00AE9B63 /* Forecast.swift */; };
+		28A38C2F218E11F100AE9B63 /* ForecastEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C2E218E11F100AE9B63 /* ForecastEntity.swift */; };
+		28A38C31218E169B00AE9B63 /* TemperatureEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C30218E169B00AE9B63 /* TemperatureEntity.swift */; };
+		28A38C33218E190B00AE9B63 /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38C32218E190B00AE9B63 /* WeatherEntity.swift */; };
 		93B594849CE43031513302ED /* Pods_WeatherCleanArchiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB526534C3AA4417254AA8F0 /* Pods_WeatherCleanArchiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +73,13 @@
 		28A38C19218E087D00AE9B63 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		28A38C1C218E08AD00AE9B63 /* VoidFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidFunction.swift; sourceTree = "<group>"; };
 		28A38C1E218E08D900AE9B63 /* DispatchQueue+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Background.swift"; sourceTree = "<group>"; };
+		28A38C22218E0C9000AE9B63 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		28A38C24218E0EB800AE9B63 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		28A38C26218E104800AE9B63 /* WeatherRepositoryInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryInput.swift; sourceTree = "<group>"; };
+		28A38C2C218E10FE00AE9B63 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		28A38C2E218E11F100AE9B63 /* ForecastEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastEntity.swift; sourceTree = "<group>"; };
+		28A38C30218E169B00AE9B63 /* TemperatureEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureEntity.swift; sourceTree = "<group>"; };
+		28A38C32218E190B00AE9B63 /* WeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
 		2D85E3F6BA1F4D15E3333E5A /* Pods_WeatherCleanArchi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherCleanArchi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0FC44C88F064B2B9926E5F /* Pods-WeatherCleanArchi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherCleanArchi.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherCleanArchi/Pods-WeatherCleanArchi.release.xcconfig"; sourceTree = "<group>"; };
 		6A75A3AA99DFF141C33A5C55 /* Pods-WeatherCleanArchiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherCleanArchiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherCleanArchiTests/Pods-WeatherCleanArchiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +190,10 @@
 		28A38BFE218E016E00AE9B63 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				28A38C0F218E054900AE9B63 /* WeatherList */,
+				28A38C2B218E10F200AE9B63 /* Models */,
+				28A38C0F218E054900AE9B63 /* Interactors */,
+				28A38C21218E0C6300AE9B63 /* Repositories */,
+				28A38C20218E0BF600AE9B63 /* ServicesAPI */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -217,22 +234,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		28A38C0F218E054900AE9B63 /* WeatherList */ = {
+		28A38C0F218E054900AE9B63 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				28A38C12218E05D000AE9B63 /* Interactor */,
+				28A38C12218E05D000AE9B63 /* WeatherList */,
 			);
-			path = WeatherList;
+			path = Interactors;
 			sourceTree = "<group>";
 		};
-		28A38C12218E05D000AE9B63 /* Interactor */ = {
+		28A38C12218E05D000AE9B63 /* WeatherList */ = {
 			isa = PBXGroup;
 			children = (
 				28A38C13218E05DE00AE9B63 /* WeatherListInteractor.swift */,
 				28A38C10218E05CC00AE9B63 /* WeatherListInteractorInput.swift */,
 				28A38C15218E05E500AE9B63 /* WeatherListInteractorOutput.swift */,
 			);
-			path = Interactor;
+			path = WeatherList;
 			sourceTree = "<group>";
 		};
 		28A38C17218E085F00AE9B63 /* Common */ = {
@@ -261,6 +278,50 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		28A38C20218E0BF600AE9B63 /* ServicesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				28A38C22218E0C9000AE9B63 /* WeatherAPI.swift */,
+			);
+			path = ServicesAPI;
+			sourceTree = "<group>";
+		};
+		28A38C21218E0C6300AE9B63 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				28A38C28218E10B100AE9B63 /* Weather */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		28A38C28218E10B100AE9B63 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				28A38C2A218E10CB00AE9B63 /* Entities */,
+				28A38C24218E0EB800AE9B63 /* WeatherRepository.swift */,
+				28A38C26218E104800AE9B63 /* WeatherRepositoryInput.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		28A38C2A218E10CB00AE9B63 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				28A38C2E218E11F100AE9B63 /* ForecastEntity.swift */,
+				28A38C30218E169B00AE9B63 /* TemperatureEntity.swift */,
+				28A38C32218E190B00AE9B63 /* WeatherEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		28A38C2B218E10F200AE9B63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28A38C2C218E10FE00AE9B63 /* Forecast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		66C17BE0B3A946D24317CA12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +345,7 @@
 				28A38BC9218DF80B00AE9B63 /* Sources */,
 				28A38BCA218DF80B00AE9B63 /* Frameworks */,
 				28A38BCB218DF80B00AE9B63 /* Resources */,
+				39D47E4C8C2171DE7C096D4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,18 +459,36 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftGen;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Pods/SwiftGen/bin/swiftgen storyboards --template swift4 --output \"$SRCROOT/WeatherCleanArchi/Generated/Storyboard.swift\" \"$SRCROOT/WeatherCleanArchi\"\n./Pods/SwiftGen/bin/swiftgen strings --template structured-swift4 --output \"$SRCROOT/WeatherCleanArchi/Generated/LocalizableStrings.swift\" \"$SRCROOT/WeatherCleanArchi/Resources/en.lproj/Localizable.strings\"\n";
+		};
+		39D47E4C8C2171DE7C096D4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherCleanArchi/Pods-WeatherCleanArchi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherCleanArchi/Pods-WeatherCleanArchi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		8C3FF0FF329DE647E420DA3B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -437,16 +517,23 @@
 			files = (
 				28A38C0E218E04F500AE9B63 /* WeatherListPresenterOutput.swift in Sources */,
 				28A38C1F218E08D900AE9B63 /* DispatchQueue+Background.swift in Sources */,
+				28A38C25218E0EB800AE9B63 /* WeatherRepository.swift in Sources */,
 				28A38C04218E01D500AE9B63 /* WeatherListViewController.swift in Sources */,
+				28A38C2D218E10FE00AE9B63 /* Forecast.swift in Sources */,
 				28A38C1D218E08AD00AE9B63 /* VoidFunction.swift in Sources */,
 				28A38BFB218DFDEB00AE9B63 /* Storyboard.swift in Sources */,
 				28A38BD1218DF80B00AE9B63 /* AppDelegate.swift in Sources */,
+				28A38C2F218E11F100AE9B63 /* ForecastEntity.swift in Sources */,
+				28A38C31218E169B00AE9B63 /* TemperatureEntity.swift in Sources */,
+				28A38C33218E190B00AE9B63 /* WeatherEntity.swift in Sources */,
 				28A38C06218E023700AE9B63 /* AppRouter.swift in Sources */,
 				28A38C16218E05E500AE9B63 /* WeatherListInteractorOutput.swift in Sources */,
 				28A38C1A218E087D00AE9B63 /* Presenter.swift in Sources */,
+				28A38C27218E104800AE9B63 /* WeatherRepositoryInput.swift in Sources */,
 				28A38C14218E05DE00AE9B63 /* WeatherListInteractor.swift in Sources */,
 				28A38C11218E05CC00AE9B63 /* WeatherListInteractorInput.swift in Sources */,
 				28A38C0C218E04EA00AE9B63 /* WeatherListPresenterInput.swift in Sources */,
+				28A38C23218E0C9000AE9B63 /* WeatherAPI.swift in Sources */,
 				28A38BFC218DFDEB00AE9B63 /* LocalizableStrings.swift in Sources */,
 				28A38C0A218E04E100AE9B63 /* WeatherListPresenter.swift in Sources */,
 			);
