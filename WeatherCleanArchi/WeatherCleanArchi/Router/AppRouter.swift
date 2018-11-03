@@ -10,11 +10,21 @@ import UIKit
 
 class AppRouter {
   
+  // MARK: - Property
+  
   lazy var rootViewController: UINavigationController = {
     return UINavigationController(rootViewController: weatherListViewController())
   }()
   
+  // MARK: - Private
+  
   private func weatherListViewController() -> WeatherListViewController {
-    return StoryboardScene.WeatherList.weatherListViewController.instantiate()
+    let weatherListInteractor = WeatherListInteractor()
+    let weatherListPresenter = WeatherListPresenter(interactor: weatherListInteractor)
+    let weatherListVC = StoryboardScene.WeatherList.weatherListViewController.instantiate()
+    weatherListInteractor.output = weatherListPresenter
+    weatherListPresenter.output = weatherListVC
+    weatherListVC.presenter = weatherListPresenter
+    return weatherListVC
   }
 }

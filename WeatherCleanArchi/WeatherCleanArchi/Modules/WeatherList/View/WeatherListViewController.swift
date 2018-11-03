@@ -10,8 +10,21 @@ import UIKit
 
 class WeatherListViewController: UIViewController {
   
+  // MARK: - Property
+  
+  var presenter: WeatherListPresenter!
+  
+  // MARK: - Lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    presenter.viewDidLoad()
     title = L10n.Weatherlist.title
   }
+}
+
+// MARK: - WeatherListPresenterOutput
+
+extension WeatherListViewController: WeatherListPresenterOutput {
+  
 }
