@@ -43,7 +43,7 @@ extension WeatherAPI: TargetType {
                                              "units": units,
                                              "cnt": nbDays,
                                              "mode": "json",
-                                             "APPID": "648a3aac37935e5b45e09727df728ac2"], // TODO: extract this api key
+                                             "APPID": "648a3aac37935e5b45e09727df728ac2"], // TODO: this api key should be extracted
                                 encoding: URLEncoding.default)
     }
   }
@@ -51,7 +51,7 @@ extension WeatherAPI: TargetType {
   var sampleData: Data {
     switch self {
     case .getWeatherForecast:
-      return Data() // TODO: provide sample data
+      return Data() // TODO: mock can be provided here
     }
   }
 }

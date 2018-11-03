@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class WeatherListViewController: UIViewController {
   
@@ -31,6 +32,7 @@ class WeatherListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter.viewDidLoad()
+    SVProgressHUD.show()
     title = L10n.Weatherlist.title
     setupCollectionView()
   }
@@ -87,7 +89,6 @@ extension WeatherListViewController: UICollectionViewDelegate {
   }
 }
 
-
 // MARK: - WeatherListPresenterOutput
 
 extension WeatherListViewController: WeatherListPresenterOutput {
@@ -95,9 +96,11 @@ extension WeatherListViewController: WeatherListPresenterOutput {
   func displayWeatherForecastList(_ forecastItemViewModels: [ForecastItemViewModel]) {
     self.forecastItemViewModels = forecastItemViewModels
     collectionView.reloadData()
+    SVProgressHUD.dismiss()
   }
   
   func displayWeatherForecastLoadingError() {
+    SVProgressHUD.dismiss()
     let alertController = UIAlertController(title: nil,
                                             message: L10n.Weatherlist.Error.Loading.message,
                                             preferredStyle: .alert)

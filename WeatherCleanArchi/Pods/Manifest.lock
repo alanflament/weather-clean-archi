@@ -8,12 +8,14 @@ PODS:
   - Nimble (7.3.1)
   - Result (3.2.4)
   - Sourcery (0.15.0)
+  - SVProgressHUD (2.2.5)
   - SwiftGen (5.3.0)
 
 DEPENDENCIES:
   - Moya (= 11.0.2)
   - Nimble (= 7.3.1)
   - Sourcery (= 0.15.0)
+  - SVProgressHUD (= 2.2.5)
   - SwiftGen (= 5.3.0)
 
 SPEC REPOS:
@@ -23,6 +25,7 @@ SPEC REPOS:
     - Nimble
     - Result
     - Sourcery
+    - SVProgressHUD
     - SwiftGen
 
 SPEC CHECKSUMS:
@@ -31,8 +34,9 @@ SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Sourcery: 5895672cae353cdbfa95f3f4aaeb75a664d76f6a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftGen: 4379bd3640b0a212a0f6ea3c494adba385513d10
 
-PODFILE CHECKSUM: 1a4c8245d4ffbb1b603bc041a771fc14de9a9a7f
+PODFILE CHECKSUM: 12f64a1e6ab15a7596a522ff8a00795f7925b9ae
 
 COCOAPODS: 1.5.3

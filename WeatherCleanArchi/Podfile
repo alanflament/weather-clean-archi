@@ -9,6 +9,7 @@ target 'WeatherCleanArchi' do
   
   pod 'SwiftGen', '5.3.0'
   pod 'Moya', '11.0.2'
+  pod 'SVProgressHUD', '2.2.5'
 
   target 'WeatherCleanArchiTests' do
     inherit! :search_paths
