@@ -1,0 +1,6 @@
+framework module Pods_WeatherCleanArchiTests {
+  umbrella header "Pods-WeatherCleanArchiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
