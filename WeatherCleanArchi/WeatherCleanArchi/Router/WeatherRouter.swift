@@ -8,10 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherRouter {
   func routeTo(route: WeatherRoute)
-}
-
-enum WeatherRoute {
-  case weatherDetails(forecast: Forecast)
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherListPresenterInput {
   func viewDidLoad()
   func didTapWeatherForecast(at index: Int)

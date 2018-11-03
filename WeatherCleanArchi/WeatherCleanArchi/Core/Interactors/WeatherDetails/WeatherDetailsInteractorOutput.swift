@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherDetailsInteractorOutput: class {
   func didFetchForecastDetails(_ forecast: Forecast)
 }

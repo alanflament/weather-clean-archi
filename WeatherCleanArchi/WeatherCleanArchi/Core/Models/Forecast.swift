@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Forecast {
+struct Forecast: Equatable {
   let date: Date
   let temperatureMin: Double
   let temperatureMax: Double
@@ -18,7 +18,7 @@ struct Forecast {
   let windSpeed: Double
 }
 
-enum ForecastType {
+enum ForecastType: Equatable {
   case brokenClouds
   case clearSky
   case fewClouds

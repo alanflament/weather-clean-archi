@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherDetailsPresenterOutput: class {
   func displayDetails(for viewModel: WeatherDetailsViewModel)
 }

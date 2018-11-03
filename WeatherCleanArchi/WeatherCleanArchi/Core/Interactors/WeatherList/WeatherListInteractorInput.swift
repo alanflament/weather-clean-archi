@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherListInteractorInput {
   func fetchWeatherForecast()
   func getWeatherForecastForDetails(at index: Int)

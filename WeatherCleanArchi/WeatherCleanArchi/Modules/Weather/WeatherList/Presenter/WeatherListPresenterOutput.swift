@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherListPresenterOutput: class {
   func displayWeatherForecastList(_ forecastItemViewModels: [ForecastItemViewModel])
   func displayWeatherForecastLoadingError()

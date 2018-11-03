@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// sourcery: AutoMockable
 protocol WeatherRepositoryInput {
   func getWeatherForecast(city: String, units: String, nbDays: Int, success: @escaping ([Forecast]) -> Void, failure: @escaping (Error) -> Void)
 }

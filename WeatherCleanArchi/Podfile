@@ -12,7 +12,10 @@ target 'WeatherCleanArchi' do
 
   target 'WeatherCleanArchiTests' do
     inherit! :search_paths
-    # Pods for testing
+
+    pod 'Sourcery', '0.15.0'
+    pod 'Nimble', '7.3.1'
+  
   end
 
 end

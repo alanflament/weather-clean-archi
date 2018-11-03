@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ForecastItemViewModel {
+struct ForecastItemViewModel: Equatable {
   let date: String
   let image: UIImage
   let temperature: String
