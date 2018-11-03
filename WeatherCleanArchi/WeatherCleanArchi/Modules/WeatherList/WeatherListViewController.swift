@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WeatherListViewController.swift
 //  WeatherCleanArchi
 //
 //  Created by Alan Flament on 03/11/2018.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class WeatherListViewController: UIViewController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    title = L10n.Weatherlist.title
   }
-
-
 }
-
