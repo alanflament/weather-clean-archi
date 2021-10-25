@@ -1,1 +1,3 @@
 # Weather-Clean-Archi
+
+Just trying out Sonar Cloud ...
