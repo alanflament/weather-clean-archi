@@ -1,0 +1,18 @@
+fastlane_version '1.44.0'
+
+default_platform :ios
+
+platform :ios do
+  ##
+  # Test lane
+  ##
+
+  lane :test do |options|
+    scan(
+      workspace: 'WeatherCleanArchi/WeatherCleanArchi.xcworkspace',
+      skip_build: true,
+      output_directory: './reports',
+      output_types: 'html'
+    )
+  end
+end
