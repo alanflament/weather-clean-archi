@@ -15,7 +15,6 @@
 		28A38BD1218DF80B00AE9B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38BD0218DF80B00AE9B63 /* AppDelegate.swift */; };
 		28A38BD8218DF80E00AE9B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A38BD7218DF80E00AE9B63 /* Assets.xcassets */; };
 		28A38BDB218DF80E00AE9B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A38BD9218DF80E00AE9B63 /* LaunchScreen.storyboard */; };
-		28A38BE6218DF80E00AE9B63 /* WeatherCleanArchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38BE5218DF80E00AE9B63 /* WeatherCleanArchiTests.swift */; };
 		28A38BF3218DFC3000AE9B63 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28A38BF5218DFC3000AE9B63 /* Localizable.strings */; };
 		28A38BFB218DFDEB00AE9B63 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38BF9218DFDEB00AE9B63 /* Storyboard.swift */; };
 		28A38BFC218DFDEB00AE9B63 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A38BFA218DFDEB00AE9B63 /* LocalizableStrings.swift */; };
@@ -82,7 +81,6 @@
 		28A38BDA218DF80E00AE9B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A38BDC218DF80E00AE9B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A38BE1218DF80E00AE9B63 /* WeatherCleanArchiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherCleanArchiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28A38BE5218DF80E00AE9B63 /* WeatherCleanArchiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCleanArchiTests.swift; sourceTree = "<group>"; };
 		28A38BE7218DF80E00AE9B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A38BF4218DFC3000AE9B63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28A38BF6218DFC3E00AE9B63 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 				2819AD86218E562A0041A238 /* Core */,
 				2819AD85218E56240041A238 /* Modules */,
 				28A38C62218E52A400AE9B63 /* Generated */,
-				28A38BE5218DF80E00AE9B63 /* WeatherCleanArchiTests.swift */,
 				28A38BE7218DF80E00AE9B63 /* Info.plist */,
 			);
 			path = WeatherCleanArchiTests;
@@ -794,7 +791,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A38BE6218DF80E00AE9B63 /* WeatherCleanArchiTests.swift in Sources */,
 				2819AD93218E5B7F0041A238 /* WeatherListPresenterTests.swift in Sources */,
 				2819AD8F218E5AD60041A238 /* ErrorMock.swift in Sources */,
 				2819AD8A218E56660041A238 /* WeatherListInteractorTests.swift in Sources */,
@@ -961,7 +957,10 @@
 				DEVELOPMENT_TEAM = 2EBS83VQN9;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherCleanArchi/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanflament.WeatherCleanArchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -978,7 +977,10 @@
 				DEVELOPMENT_TEAM = 2EBS83VQN9;
 				INFOPLIST_FILE = "$(SRCROOT)/WeatherCleanArchi/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanflament.WeatherCleanArchi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -995,7 +997,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2EBS83VQN9;
 				INFOPLIST_FILE = WeatherCleanArchiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanflament.WeatherCleanArchiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1013,7 +1019,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2EBS83VQN9;
 				INFOPLIST_FILE = WeatherCleanArchiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alanflament.WeatherCleanArchiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
