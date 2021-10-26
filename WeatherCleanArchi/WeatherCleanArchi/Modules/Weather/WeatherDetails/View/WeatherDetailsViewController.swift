@@ -52,6 +52,17 @@ class WeatherDetailsViewController: UIViewController {
     humidityTitleLabel.text = L10n.Weatherdetails.humidity
     feelingTitleLabel.text = L10n.Weatherdetails.feeling
   }
+    
+    private func displayDetailsDuplicated(for viewModel: WeatherDetailsViewModel) {
+        dateLabel.text = viewModel.date
+        weatherImageView.image = viewModel.image
+        temperatureLabel.text = viewModel.temperature
+        temperatureMinValueLabel.text = viewModel.temperatureMin
+        temperatureMaxValueLabel.text = viewModel.temperatureMax
+        humidityValueLabel.text = viewModel.humidity
+        feelingValueLabel.text = viewModel.feeling
+        view.backgroundColor = viewModel.color
+    }
 }
 
 // MARK: - WeatherDetailsPresenterOutput
